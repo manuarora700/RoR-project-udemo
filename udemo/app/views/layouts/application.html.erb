@@ -34,7 +34,14 @@
     <li><a href="<%= pages_about_path %>">About</a></li>
     <li><%= link_to "Location", pages_location_path%></li>
   </ul>
-    <%= yield %>
+
+    <div class="row">
+      <div class="col m10 offset-m1">
+        <!--Material shiz-->
+        <%= yield %>
+      
+      </div>
+    </div>
 
     <script>
       $(document).ready(function(){
