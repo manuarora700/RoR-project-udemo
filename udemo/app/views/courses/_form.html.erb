@@ -12,31 +12,25 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :image %>
-    <%= form.text_field :image %>
+    <%= form.text_field :image, placeholder: "Image"%>
   </div>
 
   <div class="field">
-    <%= form.label :video %>
-    <%= form.text_field :video %>
+    <%= form.text_field :video, placeholder: "Video"%>
   </div>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, placeholder: "Title" %>
   </div>
 
   <div class="field">
-    <%= form.label :star %>
-    <%= form.number_field :star %>
+    <%= form.number_field :star, placeholder: "Star" %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, placeholder: "Description", length: "800", class: "materialize-textarea" %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <button class="btn" type="submit">Submit</button>
+  <%= link_to "Go to all courses", courses_path, class: "btn" %>
 <% end %>
