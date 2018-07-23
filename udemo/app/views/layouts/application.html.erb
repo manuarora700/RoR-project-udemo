@@ -22,7 +22,7 @@
       <a href="#!" class="brand-logo">Udemo</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Courses</a></li>
+        <li><a href="<%= courses_path %>">Courses</a></li>
         <li><a href="<%= pages_about_path %>">About</a></li>
         <li><%= link_to "Location", pages_location_path%></li>
       </ul>
@@ -30,7 +30,7 @@
   </nav>
 
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="#">Courses</a></li>
+    <li><a href="<%= courses_path %>">Courses</a></li>
     <li><a href="<%= pages_about_path %>">About</a></li>
     <li><%= link_to "Location", pages_location_path%></li>
   </ul>
