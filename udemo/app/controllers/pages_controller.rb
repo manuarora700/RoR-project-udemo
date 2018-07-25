@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def location
   end
+
+  def home
+  end
 end
